@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Map / Tile Editor</title>
+        <style>
+        </style>
+        <link rel=stylesheet href=editor.css>
+        <script src=helpers.js></script>
+        <script src=jGrid.js></script>
+        <link rel='shortcut icon' href=icon.png>
+    </head>
+    <body>
+        <a href=index.html><img src=icon.png></a>
+        <menu>
+            <left>
+                <button title='New Board' id=newBoard><img src='assets/board.png'></button>
+                <button title='Color' id=color><img src='assets/color.png'></button>
+                <button title='Align to corner (starting position)' id=align><img src='assets/align.png'></button>
+                <button title='Fill with Color' id=fill><img src='assets/fill.png'></button>
+                <button title='Eyedropper: pick up colors' id=eyedropper><img src='assets/eye.png'></button>
+                <div title='Add Collisions' id=collision><img src='assets/collision.png'></div>
+            </left>
+            <top>
+                <input id=name placeholder="File Name">
+                <input id=size type=range min=20 max=80 value=30>
+                <button id=setSize>Set Size</button>
+                <button id=imgx>Export as tile</button>
+                <button id=mapx>Export as map</button>
+            </top>
+        </menu>
+        <game></game>
+        <script src=editor.js></script>
+    </body>
+</html>
